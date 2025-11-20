@@ -1,6 +1,6 @@
 package supermarked.robot;
 
-import supermarked.data.Vare;
+import supermarked.robot.Vare;
 
 import java.util.*;
 

@@ -1,0 +1,38 @@
+@startuml
+
+
+
+actor User
+
+
+
+usecase "Vælge varer" as UC1
+usecase "Normal varer" as UC2
+usecase "Tilbud varer" as UC3
+usecase "Kurv" as UC4
+usecase "Køber varer" as UC5
+usecase "Bon udleveres" as UC6
+
+usecase "Gemmer normal pris" as UC7
+usecase "Overskriver pris" as UC8
+usecase "Beregning af Sparet pris" as UC9
+
+User --> UC1
+UC1 --> UC2
+UC1 --> UC3
+UC2 --> UC4
+UC3 --> UC4
+UC4 --> UC5
+UC5 --> UC6
+'det nye der bliver tilføjet efter jeg har lavet det hele
+UC2 --> UC7
+UC3 --> UC8
+UC8 --> UC5
+UC7 --> UC9
+UC8 --> UC9
+UC9 --> UC6
+
+
+
+
+@enduml
