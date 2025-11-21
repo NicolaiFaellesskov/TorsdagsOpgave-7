@@ -23,7 +23,7 @@ public class Supermarked {
 
         List<Vare> tilbudVarer = fileIO.readFile("data/tilbud.csv");
         if (tilbudVarer.isEmpty()) {
-            System.out.println("Ingen varer blev indlæst fra filen (data/varer.csv)!");
+            System.out.println("Ingen varer blev indlæst fra filen (data/tilbud.csv)!");
             return;
         }
 
