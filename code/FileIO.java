@@ -9,7 +9,7 @@ import java.util.List;
 public class FileIO {
     private String priceString;
 
-    public List<Vare> readFile(String fileName) {
+    public List<Vare> readFile(String fileName) { // metoden returnerer en liste af Vare-objekter og tage en fil som input.
 
         boolean skipFirstLine = true;
         List<Vare> vareList = new ArrayList<>();
